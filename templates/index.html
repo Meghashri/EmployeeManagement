@@ -1,0 +1,76 @@
+<html>
+<head> <H1>  Employee Management</H1></head>
+
+<body>
+<div>
+<h3>There are following public JSON REST apis</h3>
+
+		<table class="table">
+			<thead class="thead-inverse">
+				<tr>
+					<th>#</th>
+					<th>Route</th>
+					<th>Method</th>
+					<th>Type</th>
+					<th>Full example route</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+		<tbody>
+		<tr>
+			<th scope="row">1</th>
+			<td>/employees</td>
+			<td>GET</td>
+			<td>JSON</td>
+			<td><a href="/employees" class="link-red" target="_blank">http://localhost:5000/employees</a></td>
+			<td>Get all employee data in paginated list</td>
+		</tr>
+		<tr>
+			<th scope="row">2</th>
+			<!--<td> EmpId#: <input type="number" name="id"></td>-->
+			<td>/employees_search/{id}</td>
+			<td>GET</td>
+			<td>JSON</td>
+			<td><a href="/employees_search/1" class="link-red" target="_blank">http://localhost:5000/employees_search/1</a></td>
+			<td>Get a single employee data with employee-id appended to url</td>
+		</tr>
+		<tr>
+			<th scope="row">3</th>
+			<td>/territory_employees/{territory_name}</td>
+			<td>GET</td>
+			<td>JSON</td>
+			<td><a href="/territory_employees/Australia" class="link-red" target="_blank">http://localhost:5000/territory_employees/Australia</a></td>
+			<td>Get all employee data in same country in paginated list</td>
+		</tr>
+		<tr>
+			<th scope="row">4</th>
+			<td>/lineofservice_employees/{line_of_service}</td>
+			<td>GET</td>
+			<td>JSON</td>
+			<td><a href="/lineofservice_employees/Tax" class="link-red" target="_blank">http://localhost:5000/lineofservice_employees/Tax</a></td>
+			<td>Get all employee data in same Line of SErvice in paginated list</td>
+		</tr>
+		<tr>
+			<th scope="row">5</th>
+			<td>/employeelastname_search/{employee_lastname}</td>
+			<td>GET</td>
+			<td>JSON</td>
+			<td><a href="/employeelastname_search/Snow" class="link-red" target="_blank">http://localhost:5000/employeelastname_search/Snow</a></td>
+			<td>Get all employee data with same lastname in paginated list</td>
+		</tr>
+		<tr>
+			<th scope="row">6</th>
+			<td>/employees</td>
+			<td>POST</td>
+			<td>JSON</td>
+			<td><a href="/employees" class="link-red" target="_blank">http://localhost:5000/employees</a></td>
+			<td>Add new employee data in JSON format(Using postman like client)</td>
+		</tr>
+</tbody>
+</table>
+		</div>
+<div>
+</body>
+
+</html>
+
