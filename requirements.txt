@@ -2,7 +2,7 @@ aniso8601==6.0.0
 certifi==2019.3.9
 chardet==3.0.4
 Click==7.0
-Flask==0.12.2
+Flask==1.0
 Flask-Jsonpify==1.5.0
 flask-paginate==0.5.2
 Flask-RESTful==0.3.6
